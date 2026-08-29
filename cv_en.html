@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Marcos Santiago Anastasio Campot | Fullstack & Backend Developer</title>
+  
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://AnastasioCampotMarcos.github.io/cv_en.html">
+  <meta property="og:title" content="Marcos Santiago Anastasio Campot — Fullstack & Backend Developer">
+  <meta property="og:description" content="Fullstack & Backend Developer (.NET / C#, Node.js / TypeScript, Python). Microservices architecture, API integrations, and Docker Linux deployments.">
+  <meta property="og:image" content="https://AnastasioCampotMarcos.github.io/preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://AnastasioCampotMarcos.github.io/cv_en.html">
+  <meta property="twitter:title" content="Marcos Santiago Anastasio Campot — Fullstack & Backend Developer">
+  <meta property="twitter:description" content="Fullstack & Backend Developer (.NET / C#, Node.js / TypeScript, Python). Microservices architecture, API integrations, and Docker Linux deployments.">
+  <meta property="twitter:image" content="https://AnastasioCampotMarcos.github.io/preview.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #111215;
+      --paper: #181a1f;
+      --text: #e2e4e9;
+      --muted: #9ca3af;
+      --accent: #d4d4d8;
+      --border: #282a30;
+      --line: #33363f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+      display: flex;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .resume-wrapper {
+      max-width: 820px;
+      width: 100%;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: 3rem;
+      position: relative;
+    }
+
+    .top-controls {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-control {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.9rem;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn-control:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+
+    .role-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.75rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .meta-grid a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--border);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .meta-grid a:hover {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    .section-header {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    p.summary {
+      color: #d1d5db;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .item-block {
+      margin-bottom: 1.75rem;
+    }
+
+    .item-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .item-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .item-company {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    ul.details {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.details li {
+      position: relative;
+      padding-left: 1.15rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    ul.details li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    ul.details li strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .skills-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-box {
+      border: 1px solid var(--border);
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    .skill-box h3 {
+      font-family: 'Lora', serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .skill-list {
+      font-size: 0.88rem;
+      color: #e2e8f0;
+      line-height: 1.5;
+    }
+
+    .academic-row, .language-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.93rem;
+      color: #d1d5db;
+    }
+
+    /* Print / PDF Styles */
+    @media print {
+      body {
+        background-color: #ffffff;
+        color: #111827;
+        padding: 0;
+      }
+      .resume-wrapper {
+        border: none;
+        background: #ffffff;
+        padding: 0;
+        max-width: 100%;
+      }
+      .top-controls {
+        display: none;
+      }
+      header { border-bottom-color: #e5e7eb; }
+      h1 { color: #111827; }
+      .role-title { color: #4b5563; }
+      .meta-grid { color: #4b5563; }
+      .meta-grid a { color: #111827; border-bottom-color: #d1d5db; }
+      .section-header { color: #111827; border-bottom-color: #e5e7eb; }
+      p.summary { color: #374151; }
+      .item-title { color: #111827; }
+      .item-company { color: #4b5563; }
+      .item-date { color: #6b7280; }
+      ul.details li { color: #374151; }
+      ul.details li::before { color: #9ca3af; }
+      ul.details li strong { color: #111827; }
+      .skill-box { border-color: #e5e7eb; background: #f9fafb; }
+      .skill-box h3 { color: #4b5563; }
+      .skill-list { color: #111827; }
+      .academic-row, .language-row { color: #374151; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-wrapper">
+    <div class="top-controls">
+      <a href="index.html" class="btn-control">Español</a>
+    </div>
+
+    <header>
+      <h1>Marcos Santiago Anastasio Campot</h1>
+      <div class="role-title">Fullstack & Backend Developer (.NET / C# · Node.js / TypeScript · Python)</div>
+      
+      <div class="meta-grid">
+        <span>Buenos Aires, Argentina</span>
+        <span><a href="tel:+541169153063">+54 11 6915 3063</a></span>
+        <span><a href="mailto:webmarcosanastasiocampot@gmail.com">webmarcosanastasiocampot@gmail.com</a></span>
+        <span><a href="https://www.linkedin.com/in/marcosanastasiocampot/" target="_blank">LinkedIn</a></span>
+        <span><a href="https://github.com/AnastasioCampotMarcos" target="_blank">GitHub</a></span>
+        <span><a href="https://AnastasioCampotMarcos.github.io" target="_blank">Portfolio</a></span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-header">Professional Summary</div>
+      <p class="summary">
+        Fullstack and Backend Developer with 6 years of experience in software architecture, critical API integrations, and engineering real-time platforms and background services. Specialized in the .NET (C#) ecosystem and Node.js / TypeScript, with frontend experience in React and automated pipelines in Python. Proven track record delivering end-to-end solutions for software companies, manufacturing plants, and service operations: microservices architecture, relational databases (SQL Server, PostgreSQL, SQLite), high concurrency, cryptographic security, and Linux containerized deployments using Docker.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-header">Professional Experience</div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Principal Software Engineer & Founder</span>
+            <span class="item-company"> — Western Calculus</span>
+          </div>
+          <span class="item-date">03/2020 – Present</span>
+        </div>
+        <p style="color: var(--muted); font-size: 0.88rem; margin-bottom: 0.75rem; font-style: italic;">
+          Independent software engineering and technical consulting studio. Technical leadership, architecture, and development of backend systems, microservices, and integrations for corporate clients:
+        </p>
+        <ul class="details">
+          <li><strong>Fiscal Middleware & Concurrency (Client: Nolock / Software & Integrations | 2024 – 2026):</strong> Designed and built a protocol translation middleware that abstracts SOAP/XML complexity from fiscal web services (AFIP), cutting new endpoint integration time from weeks to days and removing over 200 lines of duplicated code across mobile clients. Resolved race conditions in WSAA access ticket renewals by implementing asynchronous mutex locks and in-memory caching, reducing redundant upstream requests by 65% and eliminating service downtime during peak billing hours. Implemented digital signatures with X.509 certificates (node-forge), automated log sanitization pipelines, and technical architecture audits for progressive migration to Node.js/TypeScript.</li>
+          <li><strong>Operations & Management ERP (Client: Sercar Fumigaciones / Services | 2022 – 2024):</strong> Developed an end-to-end custom management platform (ASP.NET / C# / SQL Server) featuring service scheduling, automated notification engine via Email and WhatsApp API, and RBAC with 3 user tiers, reducing work order management and dispatch time by 50%.</li>
+          <li><strong>Inventory & Production Control System (Client: Paradigma Shoes / Manufacturing | 2020 – 2022):</strong> Designed and built a full inventory and production control system for a footwear manufacturing plant (C# / .NET · SQL Server). Implemented real-time stock traceability by product variants (models, sizes, leather batches) and automated restocking alerts, cutting physical stock discrepancies by 40%.</li>
+          <li><strong>Infrastructure & Automation Utilities:</strong> Built a CLI tool in C# for encrypted and automated file transfers between remote servers via SFTP. Managed provisioning and maintenance of Linux/Windows infrastructure for multiple concurrent clients: DNS configuration, SSL certificates, Nginx web servers, and containerized production deployments with Docker.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">Featured Projects</div>
+      
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Algorithmic Trading & Real-Time Execution Engine (C# .NET / Python)</span>
+          </div>
+        </div>
+        <ul class="details">
+          <li>Engineered an algorithmic execution engine in C#/.NET for real-time financial markets: WebSocket data ingestion with rate-limiting, quantitative indicator calculations (EMA, ADX), and order execution with sub-80ms average latency. Transactional persistence in PostgreSQL/SQLite, containerized with Docker on a Linux server. Includes a live telemetry and monitoring web dashboard.</li>
+          <li>Rapid prototyping and delivery of internal data processing tools and micro-utilities using Python and Streamlit.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">Technical Skills</div>
+      <div class="skills-section-grid">
+        <div class="skill-box">
+          <h3>Backend & Languages</h3>
+          <div class="skill-list">C#, Node.js, TypeScript, Python, .NET 8 / Core / Framework, ASP.NET Web Forms / MVC, FastAPI, Express.js</div>
+        </div>
+        <div class="skill-box">
+          <h3>Frontend & UI</h3>
+          <div class="skill-list">React, Vite, Modern JavaScript (ES6+), HTML5, CSS3, Bootstrap, Streamlit</div>
+        </div>
+        <div class="skill-box">
+          <h3>Databases & APIs</h3>
+          <div class="skill-list">SQL Server, PostgreSQL, SQLite, Dexie.js (NoSQL), REST APIs, WebSockets, SOAP/XML, WSAA</div>
+        </div>
+        <div class="skill-box">
+          <h3>DevOps, Cloud & Security</h3>
+          <div class="skill-list">Docker, Linux (Ubuntu), Nginx, Git, GitHub, SFTP, Node-forge (Cryptography), PII Sanitization, Burp Suite</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">Education</div>
+      <div class="academic-row">
+        <span><strong>Associate Degree in Systems Analysis (Tecnicatura Superior)</strong> — IRSO</span>
+        <span class="item-date">In Progress (3rd Year)</span>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
